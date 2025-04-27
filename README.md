@@ -16,17 +16,36 @@ to the end of the file, save and reboot.
 
 
 # Force Gen 3
-Edit ``` /boot/firmware/config.txt ``` and add ```dtparam=pciex1_gen=3``` save and reboot.
+Edit 
+``` 
+/boot/firmware/config.txt
+```
+and add 
+```
+dtparam=pciex1_gen=3
+```
+save and reboot.
 
 # Top hat
 
-```sudo apt update```
-```sudo apt install wget```
-```wget https://github.com/radxa/rockpi-penta/releases/download/v0.2.2/rockpi-penta-0.2.2.deb```
-```sudo apt install -y ./rockpi-penta-0.2.2.deb```
+```
+sudo apt update
+```
+```
+sudo apt install wget
+```
+```
+wget https://github.com/radxa/rockpi-penta/releases/download/v0.2.2/rockpi-penta-0.2.2.deb
+```
+```
+sudo apt install -y ./rockpi-penta-0.2.2.deb
+```
 # Config Top hat
 
-edit the configuration file ```/etc/rockpi-penta.conf```
+edit the configuration file 
+```
+/etc/rockpi-penta.conf
+```
 
 ```
 [fan]
@@ -66,10 +85,20 @@ time = 10
 rotate = false
 f-temp = false
 ```
-After modifying the configuration, run the ``` sudo systemctl restart rockpi-penta.service ```command to restart the service for the configuration to take effect.
+After modifying the configuration, run the 
+``` 
+sudo systemctl restart rockpi-penta.service
+```
+command to restart the service for the configuration to take effect.
 
 
-#
+# OMV install script
+
+```
+wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/master/preinstall | sudo bash
+```
+
+
 #
 #
 #
