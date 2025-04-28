@@ -102,7 +102,19 @@ wget -O - https://github.com/OpenMediaVault-Plugin-Developers/installScript/raw/
 
 ```
 
-#
+# ZeroTier
+
+install
+```
+curl -s https://install.zerotier.com | sudo bash
+
+```
+add network
+
+```
+zerotier-cli join <network-id>
+
+```
 #
 #
 #
