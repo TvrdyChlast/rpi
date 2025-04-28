@@ -1,6 +1,24 @@
 # rpi
 all shit for rpi nas
 
+set up wifi 
+edit
+```
+/etc/wpa_supplicant/wpa_supplicant.conf
+```
+```
+network={
+ssid="wifssidnumberone"
+Priority=35
+psk="secretpassword"
+}
+network={
+ssid="numbertwoSSID"
+priority=70
+psk="pswdsecret"
+}
+```
+
 # activate penta sata
 Edit 
 
