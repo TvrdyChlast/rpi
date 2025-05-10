@@ -9,12 +9,12 @@ services:
       - 7878:7878
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=100
       - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/appdata/radarr:/config
-      - /data:/data
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/appdata/radarr:/config
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/data:/data
   sonarr:
     container_name: sonarr
     image: ghcr.io/hotio/sonarr:latest
@@ -25,12 +25,12 @@ services:
       - 8989:8989
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=100
       - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/appdata/sonarr:/config
-      - /data:/data
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/appdata/sonarr:/config
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/data:/data
   bazarr:
     container_name: lidarr
     image: ghcr.io/hotio/lidarr
@@ -41,9 +41,9 @@ services:
       - 8686:8686
     environment:
       - PUID=1000
-      - PGID=1000
+      - PGID=100
       - TZ=Europe/London
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - /docker/appdata/bazarr:/config
-      - /data/media:/data/media
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/appdata/lidarr:/config
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/data/media:/data/media
