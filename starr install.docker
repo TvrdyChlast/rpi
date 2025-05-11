@@ -14,7 +14,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/appdata/radarr:/config
-      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/data:/data
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/download:/data
   sonarr:
     container_name: sonarr
     image: ghcr.io/hotio/sonarr:latest
@@ -30,7 +30,7 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/appdata/sonarr:/config
-      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/data:/data
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/download:/data
   bazarr:
     container_name: lidarr
     image: ghcr.io/hotio/lidarr
@@ -46,4 +46,4 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/appdata/lidarr:/config
-      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/data/media:/data/media
+      - /srv/dev-disk-by-uuid-70273d8a-f07f-4a7f-bd9d-5acade50245c/Download/download/media:/data/media
