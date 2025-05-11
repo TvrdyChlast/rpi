@@ -133,6 +133,35 @@ add network
 zerotier-cli join <network-id>
 
 ```
+edit photoprism in pod
+
+```
+sudo podman exec -ti photoprism-app /bin/bash
+
+```
+
+CLI Command	Description
+photoprism users ls [search]	Searches existing user accounts
+photoprism users legacy [search]	Searches legacy user accounts
+photoprism users add [options] [username]	Adds a new user account
+photoprism users show [username]	Displays user account information
+photoprism users mod [options] [username]	Modifies an existing user account
+photoprism users rm [username]	Removes a user account
+photoprism users reset --yes	Removes all accounts and resets the database
+Command Flag	Description
+--name NAME, -n NAME	full NAME for display in the interface
+--email EMAIL, -m EMAIL	unique EMAIL address of the user
+--password PASSWORD, -p PASSWORD	PASSWORD for local authentication (8-72 characters)
+--role value, -r value	user account ROLE (admin, user, viewer or guest) (default: "admin")
+--auth PROVIDER, -A PROVIDER	authentication PROVIDER (default, local, oidc or none)
+--auth-id ID	authentication ID e.g. Subject ID or Distinguished Name (DN)
+--superadmin, -s	make user super admin with full access
+--no-login, -l	disable login on the web interface
+--webdav, -w	allow to sync files via WebDAV
+--upload-path value, -u value	upload files to this sub-folder
+--disable-2fa	deactivate two-factor authentication
+
+
 #
 #
 #
