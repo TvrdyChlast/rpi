@@ -136,18 +136,42 @@ zerotier-cli join <network-id>
 edit photoprism in pod
 
 ```
-sudo podman exec -ti photoprism-app /bin/bash
+sudo docker exec -ti photoprism-photoprism-1 /bin/bash
 
+```
+```
+photoprism convert
 ```
 
 CLI Command	Description
-photoprism users ls [search]	Searches existing user accounts
-photoprism users legacy [search]	Searches legacy user accounts
-photoprism users add [options] [username]	Adds a new user account
-photoprism users show [username]	Displays user account information
-photoprism users mod [options] [username]	Modifies an existing user account
-photoprism users rm [username]	Removes a user account
-photoprism users reset --yes	Removes all accounts and resets the database
+```
+photoprism users ls
+```
+ [search]	Searches existing user accounts
+```
+photoprism users legacy
+```
+ [search]	Searches legacy user accounts
+```
+photoprism users add
+```
+ [options] [username]	Adds a new user account
+```
+photoprism users show
+```
+ [username]	Displays user account information
+```
+photoprism users mod
+```
+ [options] [username]	Modifies an existing user account
+```
+photoprism users rm
+```
+ [username]	Removes a user account
+```
+photoprism users reset
+```
+ --yes	Removes all accounts and resets the database
 Command Flag	Description
 --name NAME, -n NAME	full NAME for display in the interface
 --email EMAIL, -m EMAIL	unique EMAIL address of the user
