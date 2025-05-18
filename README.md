@@ -133,7 +133,7 @@ add network
 zerotier-cli join <network-id>
 
 ```
-edit photoprism in pod
+edit photoprism in docker
 
 ```
 sudo docker exec -ti photoprism-photoprism-1 /bin/bash
