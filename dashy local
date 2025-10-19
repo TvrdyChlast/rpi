@@ -1,0 +1,283 @@
+{
+  "pageInfo": {
+    "title": "Rozcestník našeho serveru",
+    "description": "made by hanYs",
+    "logo": "https://images.vexels.com/media/users/3/331192/isolated/preview/9d5b7f997d5ed43fbd5a23ab18046eca-black-and-purple-spiral-logo.png",
+    "navLinks": []
+  },
+  "appConfig": {
+    "theme": "nord",
+    "layout": "vertical",
+    "iconSize": "large",
+    "startingView": "default",
+    "defaultOpeningMethod": "newtab",
+    "statusCheck": false,
+    "statusCheckInterval": 0,
+    "faviconApi": "allesedv",
+    "routingMode": "history",
+    "enableMultiTasking": false,
+    "widgetsAlwaysUseProxy": false,
+    "webSearch": {
+      "disableWebSearch": false,
+      "searchEngine": "duckduckgo",
+      "openingMethod": "newtab",
+      "searchBangs": {}
+    },
+    "enableFontAwesome": true,
+    "enableMaterialDesignIcons": false,
+    "hideComponents": {
+      "hideHeading": false,
+      "hideNav": false,
+      "hideSearch": true,
+      "hideSettings": false,
+      "hideFooter": false
+    },
+    "auth": {
+      "enableGuestAccess": false,
+      "users": [],
+      "enableOidc": false,
+      "oidc": {},
+      "enableHeaderAuth": false,
+      "headerAuth": {
+        "userHeader": "REMOTE_USER",
+        "proxyWhitelist": []
+      },
+      "enableKeycloak": false
+    },
+    "showSplashScreen": false,
+    "preventWriteToDisk": false,
+    "preventLocalSave": false,
+    "disableConfiguration": false,
+    "disableConfigurationForNonAdmin": false,
+    "allowConfigEdit": true,
+    "enableServiceWorker": false,
+    "disableContextMenu": false,
+    "disableUpdateChecks": false,
+    "disableSmartSort": false,
+    "enableErrorReporting": false
+  },
+  "sections": [
+    {
+      "name": "Today",
+      "icon": "far fa-smile-beam",
+      "displayData": {
+        "collapsed": false,
+        "hideForGuests": false
+      },
+      "widgets": [
+        {
+          "type": "clock",
+          "id": "0_513_clock"
+        },
+        {
+          "type": "weather",
+          "options": {
+            "apiKey": "efdbade728b37086877a5e83442004db",
+            "city": "Reykjavik"
+          },
+          "id": "1_513_weather"
+        },
+        {
+          "type": "crypto-watch-list",
+          "options": {
+            "currency": "USD",
+            "sortBy": "marketCap",
+            "assets": [
+              "bitcoin",
+              "ethereum",
+              "verus-coin",
+              "monero",
+              "solana",
+              "polkadot",
+              "cardano",
+              "ripple"
+            ]
+          },
+          "id": "2_513_cryptowatchlist"
+        }
+      ]
+    },
+    {
+      "name": "Aplications",
+      "icon": "far fa-briefcase",
+      "items": [
+        {
+          "title": "Photoprism",
+          "description": "Fotečky",
+          "icon": "https://styles.redditmedia.com/t5_3icc5a/styles/communityIcon_v9f53f091l281.png",
+          "url": "http://192.168.0.102:2342",
+          "target": "newtab",
+          "id": "0_1143_photoprism"
+        },
+        {
+          "title": "Karakeep",
+          "description": "Záložky",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:3300",
+          "target": "newtab",
+          "id": "1_1143_karakeep"
+        },
+        {
+          "title": "Kuchařka",
+          "description": "Mealie",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:9925/",
+          "target": "newtab",
+          "id": "2_1143_kuchaka"
+        },
+        {
+          "title": "n8n",
+          "description": "Autobot",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:5678",
+          "target": "newtab",
+          "id": "3_1143_nn"
+        },
+        {
+          "title": "Translator",
+          "description": "Mozhi",
+          "icon": "http://home.ext:3333/assets/mozhi.png",
+          "url": "http://home.pi:3333/",
+          "target": "newtab",
+          "id": "4_1143_translator"
+        },
+        {
+          "title": "MeTube",
+          "description": "Youtube downloader",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:8081",
+          "target": "newtab",
+          "id": "5_1143_metube"
+        },
+        {
+          "title": "Aria2",
+          "description": "Downloader",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:8080/",
+          "target": "newtab",
+          "id": "6_1143_aria"
+        }
+      ],
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      }
+    },
+    {
+      "name": "Servarr",
+      "icon": "far fa-download",
+      "items": [
+        {
+          "title": "Prowlarr",
+          "description": "Search torrents",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:9696",
+          "target": "newtab",
+          "id": "0_741_prowlarr"
+        },
+        {
+          "title": "Filmy",
+          "description": "Radarr",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:7878",
+          "target": "newtab",
+          "id": "1_741_filmy"
+        },
+        {
+          "title": "Seriály",
+          "description": "Sonarr",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:8989/",
+          "target": "newtab",
+          "id": "2_741_serily"
+        },
+        {
+          "title": "Hudba",
+          "description": "Lidarr",
+          "icon": "favicon",
+          "url": "http://192.168.0.102:8686",
+          "target": "newtab",
+          "id": "3_741_hudba"
+        },
+        {
+          "title": "qBittorrent",
+          "description": "",
+          "icon": "http://announce.sktorrent.eu/torrent/style/CzT/torrent_logo.png",
+          "url": "http://192.168.0.102:8181",
+          "target": "newtab",
+          "id": "4_741_qbittorrent"
+        }
+      ],
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      }
+    },
+    {
+      "name": "Maintenance",
+      "icon": "far fa-code",
+      "items": [
+        {
+          "title": "Open Media Vault",
+          "description": "Main Server",
+          "icon": "https://a.fsdn.com/allura/s/openmediavault/icon?9926557e1d662737dde5c6f30a8d58d08539210ff4b7f9f4c9555691e6038682?&w=48",
+          "url": "http://home.pi/",
+          "target": "newtab",
+          "id": "0_1123_openmediavault"
+        },
+        {
+          "title": "Open Media Vault",
+          "description": "Backup Server",
+          "icon": "https://a.fsdn.com/allura/s/openmediavault/icon?9926557e1d662737dde5c6f30a8d58d08539210ff4b7f9f4c9555691e6038682?&w=48",
+          "url": "http://192.168.0.103/",
+          "target": "newtab",
+          "id": "1_1123_openmediavault"
+        },
+        {
+          "title": "Portainer",
+          "description": "Main Server",
+          "icon": "https://logo.svgcdn.com/d/portainer-original-8x.png",
+          "url": "http://home.pi:9000",
+          "target": "newtab",
+          "id": "2_1123_portainer"
+        },
+        {
+          "title": "Portainer",
+          "description": "Kodi",
+          "icon": "https://logo.svgcdn.com/d/portainer-original-8x.png",
+          "url": "https://192.168.0.100:9443/#!/3/docker/containers",
+          "target": "newtab",
+          "id": "3_1123_portainer"
+        },
+        {
+          "title": "Grafana",
+          "description": "Docker stats",
+          "icon": "http://192.168.195.185:3000/public/img/grafana_icon.svg",
+          "url": "http://192.168.0.102:3000/",
+          "id": "4_1123_grafana"
+        },
+        {
+          "title": "Pi-hole",
+          "description": "DNS sinkhole",
+          "icon": "http://192.168.0.103:888/admin/img/logo.svg",
+          "url": "http://192.168.0.103:888/admin/",
+          "target": "newtab",
+          "id": "5_1123_pihole"
+        }
+      ],
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      }
+    }
+  ]
+}
