@@ -2,71 +2,13 @@
   "pageInfo": {
     "title": "Rozcestník našeho serveru",
     "description": "made by hanYs",
-    "logo": "",
-    "navLinks": [
-
-    ]
+    "logo": "https://images.vexels.com/media/users/3/331192/isolated/preview/9d5b7f997d5ed43fbd5a23ab18046eca-black-and-purple-spiral-logo.png",
+    "navLinks": []
   },
   "appConfig": {
-    "statusCheck": false,
     "theme": "cherry-blossom",
-    "fontAwesomeKey": "c94dc2b452",
-    "customCss": ".clock p.time { font-size: 3rem !important; }",
-    "layout": "horizontal",
-    "iconSize": "large",
-    "startingView": "default",
-    "defaultOpeningMethod": "newtab",
-    "statusCheckInterval": 0,
-    "faviconApi": "allesedv",
-    "routingMode": "history",
-    "enableMultiTasking": false,
-    "widgetsAlwaysUseProxy": false,
-    "enableFontAwesome": true,
-    "enableMaterialDesignIcons": false,
-    "hideComponents": {
-      "hideHeading": false,
-      "hideNav": false,
-      "hideSearch": true,
-      "hideSettings": false,
-      "hideFooter": false
-    },
-    "auth": {
-      "enableGuestAccess": false,
-      "users": [
-
-      ],
-      "enableOidc": false,
-      "oidc": {
-
-      },
-      "enableHeaderAuth": false,
-      "headerAuth": {
-        "userHeader": "REMOTE_USER",
-        "proxyWhitelist": [
-
-        ]
-      },
-      "enableKeycloak": false
-    },
-    "showSplashScreen": false,
-    "preventWriteToDisk": false,
-    "preventLocalSave": false,
-    "disableConfiguration": false,
-    "disableConfigurationForNonAdmin": false,
-    "allowConfigEdit": true,
-    "enableServiceWorker": false,
-    "disableContextMenu": false,
-    "disableUpdateChecks": false,
-    "disableSmartSort": false,
-    "enableErrorReporting": false,
-    "webSearch": {
-      "disableWebSearch": true,
-      "searchEngine": "duckduckgo",
-      "openingMethod": "newtab",
-      "searchBangs": {
-
-      }
-    }
+    "layout": "vertical",
+    "iconSize": "large"
   },
   "sections": [
     {
@@ -110,168 +52,186 @@
       ]
     },
     {
-      "name": "Productivity",
+      "name": "Aplications",
       "icon": "far fa-briefcase",
       "items": [
         {
           "title": "Photoprism",
           "description": "Fotečky",
           "icon": "https://styles.redditmedia.com/t5_3icc5a/styles/communityIcon_v9f53f091l281.png",
-          "url": "http://192.168.195.238:2342",
+          "url": "http://192.168.195.185:2342",
           "target": "newtab",
-          "id": "0_1302_photoprism"
+          "id": "0_1143_photoprism"
         },
         {
-          "title": "Aria2",
-          "description": "Downloader",
+          "title": "Karakeep",
+          "description": "Záložky",
           "icon": "favicon",
-          "url": "http://192.168.195.238:8080/#!/downloading",
+          "url": "http://192.168.195.185:3300",
           "target": "newtab",
-          "id": "1_1302_aria"
+          "id": "1_1143_karakeep"
         },
         {
-          "title": "Prowlarr",
-          "description": "Crawler",
+          "title": "Kuchařka",
+          "description": "Mealie",
           "icon": "favicon",
-          "url": "http://192.168.195.238:9696",
+          "url": "http://192.168.195.185:9925/",
           "target": "newtab",
-          "id": "2_1302_prowlarr"
+          "id": "2_1143_kuchaka"
         },
         {
-          "title": "Radarr",
-          "description": "Movies",
+          "title": "n8n",
+          "description": "Autobot",
           "icon": "favicon",
-          "url": "http://192.168.195.238:7878",
+          "url": "http://192.168.195.185:5678",
           "target": "newtab",
-          "id": "3_1302_radarr"
+          "id": "3_1143_nn"
         },
         {
-          "title": "Sonarr",
-          "description": "Tv shows",
-          "icon": "favicon",
-          "url": "http://192.168.195.238:8989/",
+          "title": "Translator",
+          "description": "Mozhi",
+          "icon": "http://home.ext:3333/assets/mozhi.png",
+          "url": "http://192.168.195.185:3333/",
           "target": "newtab",
-          "id": "4_1302_sonarr"
+          "id": "4_1143_translator"
         },
         {
           "title": "MeTube",
           "description": "Youtube downloader",
           "icon": "favicon",
-          "url": "http://192.168.195.238:8081",
+          "url": "http://192.168.195.185:8081",
           "target": "newtab",
-          "id": "5_1302_metube"
+          "id": "5_1143_metube"
         },
         {
-          "title": "Lidarr",
-          "description": "Music grabber",
+          "title": "Aria2",
+          "description": "Downloader",
           "icon": "favicon",
-          "url": "http://192.168.195.238:8686/",
+          "url": "http://192.168.195.185:8080/",
           "target": "newtab",
-          "id": "6_1302_lidarr"
+          "id": "6_1143_aria"
         }
-      ]
+      ],
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      }
     },
     {
-      "name": "Dev & Cloud",
+      "name": "Servarr",
+      "icon": "far fa-download",
+      "items": [
+        {
+          "title": "Prowlarr",
+          "description": "Search torrents",
+          "icon": "favicon",
+          "url": "http://192.168.195.185:9696",
+          "target": "newtab",
+          "id": "0_741_prowlarr"
+        },
+        {
+          "title": "Filmy",
+          "description": "Radarr",
+          "icon": "favicon",
+          "url": "http://192.168.195.185:7878",
+          "target": "newtab",
+          "id": "1_741_filmy"
+        },
+        {
+          "title": "Seriály",
+          "description": "Sonarr",
+          "icon": "favicon",
+          "url": "http://192.168.195.185:8989/",
+          "target": "newtab",
+          "id": "2_741_serily"
+        },
+        {
+          "title": "Hudba",
+          "description": "Lidarr",
+          "icon": "favicon",
+          "url": "http://192.168.195.185:8686",
+          "target": "newtab",
+          "id": "3_741_hudba"
+        },
+        {
+          "title": "qBittorrent",
+          "description": "",
+          "icon": "http://announce.sktorrent.eu/torrent/style/CzT/torrent_logo.png",
+          "url": "http://192.168.195.185:8181",
+          "target": "newtab",
+          "id": "4_741_qbittorrent"
+        }
+      ],
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      }
+    },
+    {
+      "name": "Maintenance",
       "icon": "far fa-code",
       "items": [
         {
           "title": "Open Media Vault",
-          "description": "Homebase",
-          "icon": "https://static-00.iconduck.com/assets.00/openmediavault-icon-1024x1024-sq785php.png",
-          "url": "http://192.168.195.238/",
+          "description": "Main Server",
+          "icon": "https://a.fsdn.com/allura/s/openmediavault/icon?9926557e1d662737dde5c6f30a8d58d08539210ff4b7f9f4c9555691e6038682?&w=48",
+          "url": "http://192.168.195.185/",
           "target": "newtab",
-          "id": "0_892_openmediavault"
+          "id": "0_1123_openmediavault"
+        },
+        {
+          "title": "Open Media Vault",
+          "description": "Backup Server",
+          "icon": "https://a.fsdn.com/allura/s/openmediavault/icon?9926557e1d662737dde5c6f30a8d58d08539210ff4b7f9f4c9555691e6038682?&w=48",
+          "url": "http://192.168.195.188/",
+          "target": "newtab",
+          "id": "1_1123_openmediavault"
         },
         {
           "title": "Portainer",
-          "icon": "https://static-00.iconduck.com/assets.00/portainer-icon-1465x2048-t155ekm0.png",
-          "url": "http://192.168.195.238:9000/#!/3/docker/containers",
+          "description": "Main Server",
+          "icon": "https://logo.svgcdn.com/d/portainer-original-8x.png",
+          "url": "http://192.168.195.185:9000",
           "target": "newtab",
-          "id": "1_892_portainer"
+          "id": "2_1123_portainer"
+        },
+        {
+          "title": "Portainer",
+          "description": "Kodi",
+          "icon": "https://logo.svgcdn.com/d/portainer-original-8x.png",
+          "url": "https://192.168.0.100:9443/#!/3/docker/containers",
+          "target": "newtab",
+          "id": "3_1123_portainer"
         },
         {
           "title": "Grafana",
           "description": "Docker stats",
-          "icon": "http://192.168.195.238:3000/public/img/grafana_icon.svg",
-          "url": "http://192.168.195.238:3000/d/Ss3q6hSZkwhgk/arm?var-interval=$__auto&orgId=1&from=now-30m&to=now&timezone=browser&var-job=cadvisor&var-node=cadvisor:8080&refresh=5m",
-          "target": "newtab",
-          "id": "2_892_grafana"
+          "icon": "http://192.168.195.185:3000/public/img/grafana_icon.svg",
+          "url": "http://192.168.195.185:3000/",
+          "id": "4_1123_grafana"
         },
         {
-          "title": "File Browser",
-          "icon": "favicon",
-          "url": "http://192.168.195.238:7070/login?redirect=/files/",
+          "title": "Pi-hole",
+          "description": "DNS sinkhole",
+          "icon": "http://192.168.0.103:888/admin/img/logo.svg",
+          "url": "http://192.168.195.188:888/admin/",
           "target": "newtab",
-          "id": "3_892_filebrowser"
+          "id": "5_1123_pihole"
         }
-      ]
-    },
-    {
-      "name": "Social & News",
-      "icon": "far fa-thumbs-up",
-      "items": [
-        {
-          "title": "rouming",
-          "icon": "https://imgs.search.brave.com/raIww_XQEUBBjaJmm8PFcYaoH84U8-9EUkz_1y208aA/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvODYzZjFmM2Y5/OGQ2YWU1ZWRmZWYw/ZjEzZDYzNTFiNGIw/NjU5NzQ1Njg1Mjdh/YTM0NDQwMTlhMTM4/ZmQ1ZTk4YS9yb3Vt/aW5nLmN6Lw",
-          "url": "https://rouming.cz/",
-          "target": "newtab",
-          "id": "0_1118_rouming"
-        },
-        {
-          "title": "youtube",
-          "icon": "https://pngimg.com/uploads/youtube/small/youtube_PNG2.png",
-          "url": "https://youtube.com",
-          "target": "newtab",
-          "id": "1_1118_youtube"
-        },
-        {
-          "title": "GitHub",
-          "description": "TvrdyChlast",
-          "icon": "https://static-00.iconduck.com/assets.00/github-icon-1024x994-4h5sdmko.png",
-          "url": "https://github.com/TvrdyChlast",
-          "target": "newtab",
-          "id": "2_1118_github"
-        },
-        {
-          "title": "HackerNews",
-          "icon": "si-ycombinator",
-          "url": "https://news.ycombinator.com/",
-          "id": "3_1118_hackernews"
-        },
-        {
-          "title": "Twitter",
-          "icon": "si-twitter",
-          "url": "https://twitter.com/",
-          "id": "4_1118_twitter"
-        },
-        {
-          "title": "YouTube",
-          "icon": "si-youtube",
-          "url": "https://youtube.com/",
-          "id": "5_1118_youtube"
-        },
-        {
-          "title": "Instagram",
-          "icon": "si-instagram",
-          "url": "https://www.instagram.com/",
-          "id": "6_1118_instagram"
-        },
-        {
-          "title": "News",
-          "icon": "si-bbc",
-          "url": "https://bbc.co.uk/news",
-          "id": "7_1118_news"
-        },
-        {
-          "title": "Crypto Prices",
-          "icon": "fab fa-bitcoin",
-          "url": "https://www.livecoinwatch.com/",
-          "description": "Real-time crypto prices and read-only portfolio",
-          "provider": "Live Coin Watch",
-          "id": "8_1118_cryptoprices"
-        }
-      ]
+      ],
+      "displayData": {
+        "sortBy": "default",
+        "rows": 1,
+        "cols": 1,
+        "collapsed": false,
+        "hideForGuests": false
+      }
     }
   ]
 }
