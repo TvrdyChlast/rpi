@@ -186,7 +186,7 @@ Command Flag	Description
 --disable-2fa	deactivate two-factor authentication
 
 
-How to restore backup
+# How to restore backup
 
 ```
 zstd -d -c backup-omv-<datum>.ddfull.zst | sudo dd of=/dev/sdX bs=4M status=progress
